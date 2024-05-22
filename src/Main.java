@@ -1,14 +1,17 @@
 public class Main {
     public static void main(String[] args) {
 
-        LinkedList newLinked = new LinkedList(0);
-        newLinked.get(1);
-        newLinked.get(2);
-        newLinked.get(3);
-        newLinked.Prepend(4);
-        newLinked.removeFirst(2);
-         newLinked.set(1,4);
+        LinkedList myLinkedList = new LinkedList(1);
+        myLinkedList.append(2);
+        myLinkedList.append(3);
+        myLinkedList.append(4);
 
-        System.out.println(newLinked);
+        System.out.println("LL before reverse():");
+        myLinkedList.printList();
+
+        myLinkedList.reverse();
+
+        System.out.println("\nLL after reverse():");
+        myLinkedList.printList();
     }
 }
