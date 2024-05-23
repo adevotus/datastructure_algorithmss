@@ -173,7 +173,6 @@ public class LinkedList {
         head = tail;
         tail = temp;
 
-
         Node after = temp.next;
         Node before = null;
 
